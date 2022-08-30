@@ -18,6 +18,12 @@ app.get("/drinks/", (req, res)=>{
   })
 }); 
 
+app.get("/drinks/:indexOfDrinksArray", (req, res)=>{
+  res.render('drinks_show.ejs', {
+    drink: drinks[req.params.indexOfDrinksArray],
+  })
+});
+
 app.get("/drinks/:id", (req, res)=>{
   res.send(req.params.id)
 })
