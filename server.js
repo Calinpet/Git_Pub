@@ -16,7 +16,7 @@ app.get("/drinks/", (req, res)=>{
   res.render('drinks_index.ejs', {
     allDrinks: drinks,
   })
-});
+}); 
 
 // TELL OUR APP TO LISTEN ON PORT...
 app.listen(3000, ()=>{
