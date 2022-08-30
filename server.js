@@ -7,7 +7,7 @@ const port = 3000;
 
 // DEFINE OUR ROUTES
 app.get("/", (req, res)=>{
-  res.send('Welcome to the Gitpub App!');
+  res.send('Welcome to the gitPub App!');
 });
 
 const drinks = require("./models/drinks.js")
@@ -17,6 +17,10 @@ app.get("/drinks/", (req, res)=>{
     allDrinks: drinks,
   })
 }); 
+
+app.get("/drinks/:id", (req, res)=>{
+  res.send(req.params.id)
+})
 
 // TELL OUR APP TO LISTEN ON PORT...
 app.listen(3000, ()=>{
