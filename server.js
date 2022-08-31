@@ -10,6 +10,7 @@ app.get("/", (req, res)=>{
   res.send('Welcome to the gitPub App!');
 });
 
+//initialize express
 const drinks = require("./models/drinks.js")
 const food = require("./models/food.js")
 
