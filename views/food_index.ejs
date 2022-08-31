@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitPub</title>
+  <title>Document</title>
 </head>
 <body>
-    <h1>Gitpub Food!</h1>
-    <a href="/food/">See all food</a>
+    <h1>Welcome to gitPub!</h1>
+    <a href="/drinks/">See all drinks</a>
     <ul>
-      <% for(let i = 0; i < allDrinks.length; i++) { %>
+      <% for(let i = 0; i < allFood.length; i++) { %>
         <li>
-          <a href="/drinks/<%=i%>"><%=allDrinks[i].name %></a>
+          <a href="/food/<%=i%>"><%=allFood[i].name %></a>
         </li>
         <% }; %>
     </ul>
